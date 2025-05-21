@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ffd6e0, #fff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+.heart {
+  font-size: 100px;
+  color: red;
+  margin-top: 20%;
+  cursor: pointer;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #c30064;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
